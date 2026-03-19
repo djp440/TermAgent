@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* TermAgent Theme - Dark (default) */
+:root {
+  --color-bg: #1e1e1e;
+  --color-fg: #d4d4d4;
+  --color-primary: #3b82f6;
+  --color-secondary: #6b7280;
+  --color-accent: #10b981;
+  --color-error: #ef4444;
+  --color-border: #3f3f46;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #1e1e1e;
+  --color-primary: #2563eb;
+  --color-secondary: #9ca3af;
+  --color-accent: #059669;
+  --color-error: #dc2626;
+  --color-border: #d1d5db;
+}
+
+@theme {
+  --color-bg: var(--color-bg);
+  --color-fg: var(--color-fg);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-error: var(--color-error);
+  --color-border: var(--color-border);
+}
